@@ -10,6 +10,7 @@
     <div class="container">
         <h1>Password Generator</h1>
         <!-- TODO: Create an input field for password length (between 8-128 characters) -->
+         
         <label for="length">Password Length:</label>
         <input type="number" id="length" value="12" min="8" max="128">
 
@@ -32,13 +33,16 @@
         <button id="generateBtn">Generate Password</button>
         
         <!-- TODO: Create a text field to display the generated password -->
-        <p id="passwordOutput"></p>
+        <label for="passwordOutput">generated password:</label>
+        <input type="text" id="passwordOutput" readonly>
+    
 
         <!-- BONUS: Add a "Copy to Clipboard" button -->
         <button id="copyBtn">Copy to Clipboard</button>
     </div>
+    
 
-    <script src="script.js"></script>
-    <script src="dom.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="dom.js"></script>
 </body>
 </html>
